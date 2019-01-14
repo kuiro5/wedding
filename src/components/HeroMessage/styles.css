@@ -5,3 +5,15 @@
   top: 30%;
   text-align: center;
 }
+
+.hero-message-title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-family: TiemposHeadline;
+  word-wrap: normal;
+}
+
+.hero-message-date {
+  padding-top: 1rem;
+  font-family: TiemposHeadline;
+}

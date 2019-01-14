@@ -1,11 +1,12 @@
 import React from 'react';
+import Scrollchor from 'react-scrollchor';
 import './styles.css';
 
 const Navigation = () => (
   <div class='navigation'>
-    <a class='navigation-item' href="">Our Story</a>
-    <a class='navigation-item' href="">Details</a>
-    <a class='navigation-item' href="">RSVP</a>
+    <Scrollchor className='navigation-item' to="#our-story">Our Story</Scrollchor>
+    <Scrollchor className='navigation-item' to="#details">Details</Scrollchor>
+    <Scrollchor className='navigation-item' to="#rsvp">RSVP</Scrollchor>
   </div>
 );
 

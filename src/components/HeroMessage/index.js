@@ -4,7 +4,8 @@ import './styles.css';
 const HeroMessage = () => {
   return (
     <div class='hero-message'>
-      <h1>We're getting married!</h1>
+      <div class='hero-message-title'>Josh & Rachel</div>
+      <div class='hero-message-date'>09.01.19</div>
     </div>
   );
 };
