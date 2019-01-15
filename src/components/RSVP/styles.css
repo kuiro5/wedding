@@ -1,0 +1,17 @@
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+}
+.rsvp-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rsvp-label-input {
+  margin: 1rem 1rem;
+}
+
+.rsvp-label-input label {
+  min-width: 5rem;
+  display: inline-block;
+}
