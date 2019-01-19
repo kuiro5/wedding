@@ -14,7 +14,7 @@ class IndexPage extends Component  {
   constructor() {
     super();
 
-    this.state = { showRSVP: true };
+    this.state = { showRSVP: false };
   }
 
   render() {
