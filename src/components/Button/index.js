@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import './styles.css';
 
 const Button = ({ onClick, children, className }) => {
   return(

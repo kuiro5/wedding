@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
-import Navigation from '../components/Navigation'
-import Hero from '../components/Hero'
-import HeroMessage from '../components/HeroMessage'
-import Section from '../components/Section'
-import Footer from '../components/Footer'
-import RSVP from '../components/RSVP'
-import SEO from '../components/seo'
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
+import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
+import HeroMessage from '../components/HeroMessage';
+import Section from '../components/Section';
+import Footer from '../components/Footer';
+import RSVP from '../components/RSVP';
+import SEO from '../components/seo';
+import OurStory from '../components/OurStory';
+import Details from '../components/Details';
+import Stay from '../components/Stay';
+import RSVPFooter from '../components/RSVPFooter';
 import './styles.css'
 
 class IndexPage extends Component  {
@@ -28,14 +32,15 @@ class IndexPage extends Component  {
           <HeroMessage openRSVP={this.openRSVP} />
         </Hero>
         <Section title={'Our Story'} id={'our-story'}>
-          Rach and Josh met at Penn State...
+          <OurStory />
         </Section>
         <Section title={'Details'} id={'details'}>
-          Rooms are blocked at Hotel Monaco and the Westin.
+          <Details />
         </Section>
-        <Section title={'RSVP'} id={'rsvp'}>
-          We are excited to celebrate with you!
+        <Section title={'Stay'} id={'stay'}>
+          <Stay />
         </Section>
+        <RSVPFooter />
         <Footer />
         <RSVP isOpen={showRSVP} close={this.closeRSVP} />
       </Layout>

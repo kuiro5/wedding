@@ -1,4 +1,7 @@
-pill-button {
+.pill-button {
   background-color: white;
   color: black;
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+  cursor: pointer;
 }
