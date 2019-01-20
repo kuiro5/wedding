@@ -9,4 +9,14 @@
 
 .navigation-item {
   margin-right: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .85rem;
+  color: black;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.navigation-item:hover {
+	opacity: 1;
 }
