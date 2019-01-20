@@ -1,13 +1,20 @@
 .save-the-date {
   background-image: url('../../images/ring.png');
+<<<<<<< HEAD
   height: 30rem;
   background-size: cover;
   background-position: center;
   position: relative;
+=======
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+>>>>>>> 115f86a57d51fbe766dcafd59e7594312d2aef4c
 }
 
 .save-the-date-container {
   height: 100%;
+<<<<<<< HEAD
   width: 100%;
   text-align: center;
   color: white;
@@ -30,4 +37,11 @@
   left: 0;
   width: 100%;
   height: 100%;
+=======
+  text-align: center;
+}
+
+.save-the-date-dt {
+  margin-bottom: 0px;
+>>>>>>> 115f86a57d51fbe766dcafd59e7594312d2aef4c
 }
