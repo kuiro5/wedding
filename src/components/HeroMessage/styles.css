@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 30%;
+  top: 35%;
   text-align: center;
 }
 
@@ -12,6 +12,7 @@
   letter-spacing: .2rem;
   font-family: TiemposHeadline;
   font-weight: bold;
+  color: white;
 }
 
 .hero-message-date {
@@ -19,6 +20,8 @@
   font-family: Gotham;
   letter-spacing: .1rem;
   text-transform: uppercase;
+  color: white;
+  opacity: 0.75;
 }
 
 .hero-button {

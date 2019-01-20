@@ -1,0 +1,7 @@
+.rsvp-footer {
+  background-image: url('../../images/RSVP.png');
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}

@@ -12,11 +12,12 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: .85rem;
-  color: black;
-  opacity: 0.7;
+  color: white;
+  opacity: 0.75;
   text-decoration: none;
 }
 
 .navigation-item:hover {
 	opacity: 1;
+  border-bottom: 1px solid;
 }
