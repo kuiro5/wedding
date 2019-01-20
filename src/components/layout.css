@@ -19,6 +19,12 @@ body {
   src: url('../fonts/Gotham-Book.otf');
 }
 
+@font-face {
+  font-family: Gotham;
+  src: url('../fonts/Gotham-Bold.otf');
+  font-weight: bold;
+}
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;

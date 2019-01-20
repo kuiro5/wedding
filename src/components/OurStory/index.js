@@ -12,15 +12,15 @@ const OurStory = () => {
 
   return (
     <div>
-      <Flex>
-        {images.map((image) => <Box p={[1]}><img src={image} /></Box>)}
-      </Flex>
       <Flex justifyContent={'center'}>
         <Box>
           <p>
-            Rach and Josh met at Penn State.
+            Josh and Rach first met in college at Penn State. Josh and Rach first met in college at Penn State.
           </p>
         </Box>
+      </Flex>
+       <Flex>
+        {images.map((image) => <Box p={[1]}><img src={image} /></Box>)}
       </Flex>
     </div>
   );

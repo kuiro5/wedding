@@ -2,3 +2,7 @@
   padding: 2rem 2rem;
   min-height: 100vh;
 }
+
+.section-header {
+	text-align: center;
+}
