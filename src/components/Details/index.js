@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, Box } from '@rebass/grid';
-import pa from '../../images/Pennsylvanian.png';
+import pa from '../../images/pa.png';
 import './styles.css';
 
 const Details = () => {
