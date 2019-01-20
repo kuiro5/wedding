@@ -11,6 +11,7 @@ import SEO from '../components/seo';
 import OurStory from '../components/OurStory';
 import Details from '../components/Details';
 import Stay from '../components/Stay';
+import SaveTheDate from '../components/SaveTheDate';
 import RSVPFooter from '../components/RSVPFooter';
 import './styles.css'
 
@@ -34,6 +35,7 @@ class IndexPage extends Component  {
         <Section title={'Our Story'} id={'our-story'}>
           <OurStory />
         </Section>
+        <SaveTheDate />
         <Section title={'Details'} id={'details'}>
           <Details />
         </Section>

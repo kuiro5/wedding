@@ -1,0 +1,15 @@
+.save-the-date {
+  background-image: url('../../images/ring.png');
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.save-the-date-container {
+  height: 100%;
+  text-align: center;
+}
+
+.save-the-date-dt {
+  margin-bottom: 0px;
+}
