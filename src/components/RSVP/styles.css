@@ -1,17 +1,55 @@
+.rsvp-modal {
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*right: auto;*/
+  /*bottom: auto;*/
+  /*margin-right: -50%;*/
+  /*transform: translate(-50%, -50%);*/
+}
+
 .rsvp-form {
   display: flex;
   flex-direction: column;
 }
+
 .rsvp-footer {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .rsvp-label-input {
-  margin: 1rem 1rem;
+  margin: .5rem 0rem;
 }
 
 .rsvp-label-input label {
   min-width: 5rem;
   display: inline-block;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
