@@ -1,19 +1,14 @@
 import React from 'react';
 import Button from '../Button'
 import { Flex, Box } from '@rebass/grid';
+import './styles.css';
 
 const RSVPFooter = () => {
   return (
-    <div className='rsvp-footer'>
-      <Flex>
-          <Box width={[1, 1/2]} p={[4]}>
-            <h4>We cannot wait to celebrate with you!</h4>
-          </Box>
-          <Box width={[1, 1/2]} p={[4]}>
-            <Button>RSVP</Button>
-          </Box>
-      </Flex>
-    </div>
+    <Flex className='rsvp-footer' flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
+      <h1 className='rsvp-footer-header'>We cannot wait to celebrate with you!</h1>
+      <Button className='rsvp-footer-button'>RSVP</Button>
+    </Flex>
   );
 };
 

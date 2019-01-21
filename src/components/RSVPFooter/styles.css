@@ -1,7 +1,15 @@
 .rsvp-footer {
-  background-image: url('../../images/RSVP.png');
-  height: 30rem;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background-image: url('../../images/pink-pattern.png');
+  min-height: 100vh;
+}
+
+.rsvp-footer-header {
+  color: white;
+}
+
+.rsvp-footer-button {
+  background-color: rgba(255, 255, 255, .4);
+  color: white;
+  padding: .75rem 2rem;
+  border: 1px solid white;
 }

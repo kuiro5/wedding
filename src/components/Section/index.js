@@ -1,10 +1,10 @@
 import React from 'react';
+import Cross from '../Cross';
 import './styles.css';
 
-const Section = ({ id, title, children }) => {
+const Section = ({ id, children }) => {
   return(
-    <div class='section'>
-      {title && id && <h1 className="section-header" id={id}>{title}</h1>}
+    <div class='section' id={id}>
       {children}
     </div>
 

@@ -1,0 +1,22 @@
+.accomodation {
+  min-height: 100vh;
+  margin: 4rem 0rem;
+}
+
+.accomodation-description {
+  max-width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.accomodation-hotels {
+  margin-top: 3rem;
+}
+
+.accomodation-hotel-border {
+  border-right: 1px solid #818c7f;
+}
+
+.accomodation-hotel {
+  text-align: center;
+}

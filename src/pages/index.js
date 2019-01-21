@@ -10,7 +10,8 @@ import RSVP from '../components/RSVP';
 import SEO from '../components/seo';
 import OurStory from '../components/OurStory';
 import Details from '../components/Details';
-import Stay from '../components/Stay';
+import Pittsburgh from '../components/Pittsburgh';
+import Accomodations from '../components/Accomodations';
 import SaveTheDate from '../components/SaveTheDate';
 import RSVPFooter from '../components/RSVPFooter';
 import './styles.css'
@@ -32,18 +33,21 @@ class IndexPage extends Component  {
           <Navigation />
           <HeroMessage openRSVP={this.openRSVP} />
         </Hero>
-        <Section title={'Our Story'} id={'our-story'}>
+        <Section id={'our-story'} showCross>
           <OurStory />
         </Section>
-        <SaveTheDate />
-        <Section title={'Details'} id={'details'}>
+        <Section id={'details'}>
           <Details />
         </Section>
-        <Section title={'Stay'} id={'stay'}>
-          <Stay />
+        <Section id={'pittsburgh'}>
+          <Pittsburgh />
+        </Section>
+        <SaveTheDate />
+        <Section id={'stay'}>
+        <Accomodations />
         </Section>
         <RSVPFooter />
-        <Footer />
+        {/* <Footer />*/}
         <RSVP isOpen={showRSVP} close={this.closeRSVP} />
       </Layout>
     )

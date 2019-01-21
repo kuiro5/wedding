@@ -1,3 +1,16 @@
-.details-message {
+.details {
+  background-image: url('../../images/green-pattern.png');
+  background-repeat: repeat;
+  min-height: 100vh;
+  color: white;
   text-align: center;
+}
+
+.details-header {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.details-section {
+  margin-bottom: 3rem;
 }
