@@ -476,7 +476,7 @@ form {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 noscript {
   margin-left: 0;
@@ -644,4 +644,16 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+input {
+  padding: .25rem .5rem;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+
+textarea {
+  padding: .5rem;
+  border-radius: 4px;
+  border: 1px solid lightgray;
 }

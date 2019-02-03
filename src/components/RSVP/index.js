@@ -16,7 +16,8 @@ class RSVP extends Component {
         right: 'auto',
         bottom: 'auto',
         marginRight: '-50%',
-        transform: 'translate(-50%, -50%)'
+        transform: 'translate(-50%, -50%)',
+        minWidth: '40%',
       }
     };
 
@@ -31,13 +32,13 @@ class RSVP extends Component {
         <form className='rsvp-form' action='https://formspree.io/joshkuiros@gmail.com' method='POST'>
           <div className='rsvp-label-input'>
             <div>Email*</div>
-            <input id='email' name='email' required/>
+            <input id='email' name='email' placeholder='Your email' required/>
           </div>
           <div className='rsvp-label-input'>
             <div>Name*</div>
-            <input id='name' name='name' required/>
+            <input id='name' name='name' placeholder='Your name' required/>
           </div>
-          <div className='rsvp-label-input'>
+          <div className='rsvp-label-select'>
             <div>Are you coming?*</div>
             <select name='coming' required>
               <option value='yes'>Yes</option>
@@ -46,14 +47,14 @@ class RSVP extends Component {
           </div>
           <div className='rsvp-label-input'>
             <div>Are you bringing anyone with you?</div>
-            <input id='guests' name='guests'/>
+            <input id='guests' name='guests' placeholder='Names of your guests'/>
           </div>
           <div className='rsvp-label-input'>
             <div>Got any special messages for us?</div>
-            <input type='text' id='messages' name='messages'/>
+            <textarea rows='2' name='messages'/>
           </div>
           <div className='rsvp-modal-footer'>
-            <Button>Save</Button>
+            <Button>Submit</Button>
           </div>
         </form>
       </Modal>
