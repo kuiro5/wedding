@@ -26,11 +26,14 @@
 
 .hero-button {
   margin-top: 2rem;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, .3);
   color: white;
   border: 0px;
+  padding: 0.75rem 1.25rem;
+  font-weight: normal;
 }
 
 .hero-button:hover {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .4);
+  transition: 0.2s;
 }
