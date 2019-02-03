@@ -13,7 +13,7 @@ const OurStory = () => {
       <div>
         <p>Rach and Josh first met their junior year at Penn State. Through hayrides and formals, football games and dollar slices, their relationship blossomed.</p>
         <p>After graduation, they embarked on their next adventure to California. Arriving in SFO with only a couple suitcases, they found their first apartment and started settling in to life on the west coast. </p>
-        <p>6 years later on Lover's Lane in San Francisco, a city they both love, Josh asked Rach to marry him.</p>
+        <p>6 years and one short walk later, Josh asked Rach to marry him under the eucalyptus trees in San Francisco, a city where they both have learned to appreciate all the beauty and quirks life has to offer.</p>
       </div>
     </Box>
     </Flex>
@@ -21,3 +21,4 @@ const OurStory = () => {
 };
 
 export default OurStory;
+
