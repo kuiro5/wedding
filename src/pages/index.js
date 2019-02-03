@@ -46,8 +46,7 @@ class IndexPage extends Component  {
         <Section id={'stay'}>
         <Accomodations />
         </Section>
-        <RSVPFooter />
-        {/* <Footer />*/}
+        <RSVPFooter openRSVP={this.openRSVP}/>
         <RSVP isOpen={showRSVP} close={this.closeRSVP} />
       </Layout>
     )
