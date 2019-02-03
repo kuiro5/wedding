@@ -28,7 +28,7 @@ class IndexPage extends Component  {
 
     return(
       <Layout>
-        <SEO title="Josh & Rach Wedding" keywords={[`josh kuiros`, `rachel morelli`, `wedding`]} />
+        <SEO title="Josh + Rach" keywords={[`josh kuiros`, `rachel morelli`, `wedding`]} />
         <Hero>
           <Navigation />
           <HeroMessage openRSVP={this.openRSVP} />
