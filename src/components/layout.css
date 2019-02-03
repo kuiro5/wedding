@@ -83,7 +83,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  font-size: 3rem;
   margin: 0.67em 0;
 }
 mark {
@@ -257,7 +257,7 @@ h1 {
   font-family: TiemposHeadline, Georgia, serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   line-height: 1.1;
 }
 h2 {
@@ -301,7 +301,7 @@ h4 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1rem;
-  color: #818c7f;
+  color: #9AA7B4;
   font-family: Gotham, sans-serif;
   text-transform: uppercase;
   font-weight: bold;

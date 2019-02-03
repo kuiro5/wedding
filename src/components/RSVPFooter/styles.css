@@ -1,12 +1,12 @@
 .rsvp-footer {
   background-image: url('../../images/pink-pattern.png');
-  min-height: 40vh;
+  min-height:45vh;
 }
 
 .rsvp-footer-header {
   color: white;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .rsvp-footer-button {
