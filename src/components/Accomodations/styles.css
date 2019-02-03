@@ -1,10 +1,10 @@
 .accomodation {
   min-height: 100vh;
-  margin: 4rem 0rem;
+  padding: 4rem 0rem;
 }
 
 .accomodation-description {
-  max-width: 30rem;
+  max-width: 34rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -20,3 +20,34 @@
 .accomodation-hotel {
   text-align: center;
 }
+
+.accomodation-subtitle {
+  color: black;
+}
+
+.accomodation-address {
+  margin-bottom: 1.5rem;
+}
+
+.accomodation-address-phone-number {
+  margin-bottom: 2.5rem;
+}
+
+.accomodation-distance {
+  margin-bottom: 1.5rem;
+}
+
+.accomodation-icons {
+  margin-right: .5rem;
+}
+
+@media screen and (max-width: 40em) {
+  .accomodation-hotel-border {
+    border-right: 0px;
+  }
+
+  .accomodation-hotel:nth-of-type(1) {
+    margin-bottom: 4.45rem;
+  }
+}
+

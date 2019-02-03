@@ -2,7 +2,6 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: 14px;
 }
 body {
   margin: 0;
@@ -207,7 +206,9 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-family: sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -250,7 +251,7 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   color: inherit;
   font-family: TiemposHeadline, Georgia, serif;
   font-weight: bold;
@@ -266,7 +267,7 @@ h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: inherit;
   font-family: TiemposHeadline, Georgia, serif;
   font-weight: bold;
@@ -282,7 +283,7 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: inherit;
   font-family: TiemposHeadline, Georgia, serif;
   font-weight: bold;
@@ -298,7 +299,7 @@ h4 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: #818c7f;
   font-family: Gotham, sans-serif;
   text-transform: uppercase;
@@ -316,7 +317,7 @@ h5 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: #818c7f;
   font-family: Gotham, sans-serif;
   text-transform: uppercase;
@@ -333,7 +334,7 @@ h6 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: #818c7f;
   font-family: Gotham, sans-serif;
   text-transform: uppercase;
