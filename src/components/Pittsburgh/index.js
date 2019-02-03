@@ -7,7 +7,7 @@ import './styles.css';
 const Pittsburgh = () => {
   return (
     <Flex className='pittsburgh' alignItems={'center'} justifyContent={'center'} flexWrap={'wrap'}>
-      <Box width={[1, 1/2]} p={[4]}>
+      <Box width={[1, 1/2]} p={[4, 5]}>
         <img src={map} />
       </Box>
       <Box className='pittsburgh-description' width={[1, 1/2]} p={[4]}>
