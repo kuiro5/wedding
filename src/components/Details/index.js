@@ -10,7 +10,6 @@ const Details = () => {
         <h1>Where</h1>
         <div className="where-title">Ceremony + Reception</div>
         <div className="where-subtitle">The Pennsylvanian</div>
-        <div className="where-text">1100 Liberty Avenue</div>
         <div className="where-text">Pittsburgh, Pennsylvania</div>
       </div>
       <div className='details-section'>

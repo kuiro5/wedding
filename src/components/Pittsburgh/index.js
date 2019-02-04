@@ -11,7 +11,7 @@ const Pittsburgh = () => {
         <img src={map} />
       </Box>
       <Box className='pittsburgh-description' width={[1, 1/2]} p={[4]}>
-        <h4>Welcome to the Steel City</h4>
+        <h4 className="pittsburgh-title">Welcome to the Steel City</h4>
         <p>Situated within the Allegheny Mountains, Pittsburgh is the Steel City known for its rich history, melting pot of culture, and transformative industry. While you're here, these are some of Rach and Josh's favorite things to do:</p>
         <ul>
           <li>Breakfast @ <a href='http://www.pamelasdiner.com/' target='_blank'>Pamela's in The Strip District</a></li>
