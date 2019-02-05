@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Josh + Rach`,
-    description: `Josh + Rach wedding website`,
+    description: `Josh + Rach's Wedding Website`,
     author: `@gatsbyjs`,
   },
   plugins: [
