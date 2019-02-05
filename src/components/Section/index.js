@@ -4,7 +4,7 @@ import './styles.css';
 
 const Section = ({ id, children }) => {
   return(
-    <div class='section' id={id}>
+    <div className='section' id={id}>
       {children}
     </div>
 
