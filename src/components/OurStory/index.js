@@ -5,7 +5,7 @@ import './styles.css';
 
 const OurStory = () => {
   return (
-    <Flex alignItems={'center'} justifyContent={'center'} my={[6]}>
+    <Flex alignItems={'center'} justifyContent={'center'}>
       <Box className='our-story'>
       <Cross />
       <h1>Our Story</h1>
