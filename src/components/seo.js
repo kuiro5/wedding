@@ -37,7 +37,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image`,
-                content: img,
+                content: `https://www.joshplusrach.com${img}`,
               },
               {
                 name: `twitter:card`,
