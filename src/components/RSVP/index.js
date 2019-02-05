@@ -32,7 +32,7 @@ class RSVP extends Component {
         <form className='rsvp-form' action='https://formspree.io/joshkuiros@gmail.com' method='POST'>
           <div className='rsvp-label-input'>
             <div>Email*</div>
-            <input id='email' name='email' placeholder='Your email' required/>
+            <input id='email' name='email' placeholder='Enter email address' required/>
           </div>
           <div className='rsvp-label-input'>
             <div>Name*</div>
@@ -50,7 +50,7 @@ class RSVP extends Component {
             <input id='guests' name='guests' placeholder='Names of your guests'/>
           </div>
           <div className='rsvp-label-input'>
-            <div>Got any special messages for us?</div>
+            <div>Any special messages for us?</div>
             <textarea rows='2' name='messages'/>
           </div>
           <div className='rsvp-modal-footer'>
