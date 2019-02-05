@@ -1,9 +1,16 @@
 .pill-button {
   background-color: white;
-  color: #818c7f;
+  color: #9AA7B4;
   font-weight: bold;
   border-radius: .25rem;
   padding: .5rem 1rem;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid #9AA7B4;
+}
+
+
+.pill-button:hover {
+	background-color: #9AA7B4;
+	color: white;
+	transition: 0.1s;
 }
