@@ -10,7 +10,7 @@ const Pittsburgh = () => {
       <Box width={[1, 1/2]} p={[4, 5]}>
         <img src={map} />
       </Box>
-      <Box className='pittsburgh-description' width={[1, 1/2]} p={[4, 2]}>
+      <Box className='pittsburgh-description' width={[1, 1/2]} p={[4, 4, 4, 2]}>
         <h4 className="pittsburgh-title">Welcome to the Steel City</h4>
         <p>Situated within the Allegheny Mountains, Pittsburgh is the Steel City known for its rich history, melting pot of culture, and transformative industry. While you're here, these are some of Rach and Josh's favorite things to do:</p>
         <ul>

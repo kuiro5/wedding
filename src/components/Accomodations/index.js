@@ -12,7 +12,7 @@ const Accomodations = () => {
       <Flex className='accomodation-description' alignItems={'center'} justifyContent={'center'}>
         <Box>
           <Cross />
-          <h1>Accomodations</h1>
+          <h1 className='accomodation-header'>Accomodations</h1>
           <p>Blocks of rooms have been reserved at The Westin and Hotel Monaco in downtown Pittsburgh. Several types of rooms are available and rates vary by room type. Mention the Morelli/Kuiros wedding block to receive a group rate.
           </p>
         </Box>
