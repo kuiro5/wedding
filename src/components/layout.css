@@ -304,10 +304,11 @@ h4 {
   color: #9AA7B4;
   font-family: Gotham, sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
+  letter-spacing: .075rem;
 }
 
 h5 {
