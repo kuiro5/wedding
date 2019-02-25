@@ -15,16 +15,11 @@
   margin-bottom: 3rem;
 }
 
-.where-title {
-	margin-bottom: 1rem;
-}
-
-.where-subtitle {
-	text-transform: uppercase;
-	font-weight: bold;
-	margin-bottom: 0.25rem;
-}
-
 .where-text {
-	text-transform: uppercase;
+	margin-bottom: 0.15rem;
+}
+
+.where-italic {
+  margin-top: 1.5rem;
+  font-style: italic;
 }
