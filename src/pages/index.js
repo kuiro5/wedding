@@ -7,6 +7,7 @@ import HeroMessage from '../components/HeroMessage';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
 import RSVP from '../components/RSVP';
+import InvitationCode from '../components/InvitationCode';
 import SEO from '../components/seo';
 import OurStory from '../components/OurStory';
 import Details from '../components/Details';
@@ -14,24 +15,29 @@ import Pittsburgh from '../components/Pittsburgh';
 import Accomodations from '../components/Accomodations';
 import SaveTheDate from '../components/SaveTheDate';
 import RSVPFooter from '../components/RSVPFooter';
+import ModalIDs from '../constants/modalIDs';
 import './styles.css'
 
 class IndexPage extends Component  {
   constructor() {
     super();
 
-    this.state = { showRSVP: false };
+    this.initialState = {
+      modalID: null,
+      invitationCode: '',
+    };
+    this.state = this.initialState;
   }
 
   render() {
-    const { showRSVP } = this.state;
+    const { modalID, showRSVP, invitationCode } = this.state;
 
     return(
       <Layout>
         <SEO title="Josh + Rach" keywords={[`josh kuiros`, `rachel morelli`, `wedding`]} />
         <Hero>
           <Navigation />
-          <HeroMessage openRSVP={this.openRSVP} />
+          <HeroMessage openRSVP={this.openInvitationCode} />
         </Hero>
         <Section id={'our-story'} showCross>
           <OurStory />
@@ -46,18 +52,34 @@ class IndexPage extends Component  {
         <Section id={'stay'}>
         <Accomodations />
         </Section>
-        <RSVPFooter openRSVP={this.openRSVP}/>
-        <RSVP isOpen={showRSVP} close={this.closeRSVP} />
+        <RSVPFooter openRSVP={this.openInvitationCode}/>
+        <InvitationCode
+          invitationCode={invitationCode}
+          onInvitationCodeChange={this.onInvitationCodeChange}
+          isOpen={modalID === ModalIDs.INVITATION_CODE}
+          close={this.closeModal}
+          submit={this.openRSVP}
+        />
+        <RSVP isOpen={modalID === ModalIDs.RSVP} close={this.closeModal} />
       </Layout>
     )
   }
 
-  openRSVP = () => {
-    this.setState({ showRSVP: true });
+
+  onInvitationCodeChange = ({ target: { value: invitationCode } }) => {
+    this.setState({ invitationCode })
   }
 
-  closeRSVP = () => {
-    this.setState({ showRSVP: false });
+  openInvitationCode = () => {
+    this.setState({ modalID: ModalIDs.INVITATION_CODE });
+  }
+
+  openRSVP = () => {
+    this.setState({ modalID: ModalIDs.RSVP });
+  }
+
+  closeModal = () => {
+    this.setState({ ...this.initialState });
   }
 }
 

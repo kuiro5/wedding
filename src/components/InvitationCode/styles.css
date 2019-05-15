@@ -1,0 +1,13 @@
+.invitation-code-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.invitation-code-input {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.invitation-code-button {
+  align-self: flex-end;
+}

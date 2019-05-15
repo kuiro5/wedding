@@ -1,34 +1,18 @@
 import React, { Component } from 'react';
-import Modal from 'react-modal';
 import Button from '../Button';
-import { MdClose } from 'react-icons/md';
+import Modal from '../Modal';
 import './styles.css';
 
 class RSVP extends Component {
   render() {
-    const { isOpen } = this.props;
-
-    const customStyles = {
-      content: {
-        padding: '2rem',
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        minWidth: '40%',
-      }
-    };
+    const { close, isOpen } = this.props;
 
     return(
       <Modal
         isOpen={isOpen}
-        onRequestClose={this.cancel}
-        style={customStyles}
+        close={close}
+        title={'RSVP'}
       >
-        <MdClose className='close' onClick={this.cancel} />
-        <h1>RSVP</h1>
         <form className='rsvp-form' action='https://formspree.io/joshkuiros@gmail.com' method='POST'>
           <div className='rsvp-label-input'>
             <div>Email*</div>
@@ -70,7 +54,6 @@ class RSVP extends Component {
 
     close();
   }
-
 }
 
 export default RSVP;
