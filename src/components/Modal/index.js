@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactModal from 'react-modal';
 import { MdClose } from 'react-icons/md';
+import './styles.css';
 
 class Modal extends Component {
 
@@ -16,7 +17,9 @@ class Modal extends Component {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        minWidth: '40%'
+        minWidth: '50%',
+        maxHeight: '90vh',
+        overflowY: 'auto',
       }
     };
 

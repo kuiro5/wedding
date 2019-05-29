@@ -2,9 +2,14 @@ import React from 'react';
 import classNames from 'classnames';
 import './styles.css';
 
-const Button = ({ onClick, children, className }) => {
+const Button = ({ disabled, onClick, children, className, type }) => {
   return(
-    <button className={classNames('pill-button', className)} onClick={onClick}>
+    <button
+      disabled={disabled}
+      type={type}
+      className={classNames('pill-button', className)}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

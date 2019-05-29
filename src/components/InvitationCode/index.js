@@ -1,12 +1,55 @@
 import React, { Component } from 'react';
 import Modal from '../Modal';
 import Button from '../Button';
+import InvitationCodes from '../../constants/invitationCodes';
 import './styles.css';
 
 class InvitationCode extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showError: false,
+    };
+  }
+
+  invalidInvitationCode = () => {
+    const { invitationCode } = this.props;
+
+    return !Object.values(InvitationCodes).includes(invitationCode.toLowerCase());
+  };
+
+  onSubmit = () => {
+    const { submit } = this.props;
+
+    if(this.invalidInvitationCode()) {
+      this.setState({ showError: true });
+      return;
+    }
+
+    submit();
+  };
+
+  onChange = (e) => {
+    const { onInvitationCodeChange } = this.props;
+    const { showError } = this.state;
+
+    if(showError) {
+      this.setState({ showError: false });
+    }
+
+    onInvitationCodeChange(e);
+  };
+
+  onKeyPress = (target) => {
+    if(target.charCode === 13) {
+      this.onSubmit();
+    }
+  }
 
   render() {
     const { close, isOpen, submit, invitationCode, onInvitationCodeChange } = this.props;
+    const { showError } = this.state;
+    const error = showError ? 'Invalid Invitation Code' : '';
 
     return(
       <Modal
@@ -15,11 +58,18 @@ class InvitationCode extends Component {
         title={'Welcome!'}
       >
         <div className='invitation-code-wrapper'>
-        <input className='invitation-code-input' placeholder={'Invitation Code'} onChange={onInvitationCodeChange} value={invitationCode} />
-        <Button className='invitation-code-button' onClick={submit}>Submit</Button>
-      </div>
+          <div>To begin, please enter the code from the details card in your invitation:</div>
+          <input
+            className='invitation-code-input'
+            placeholder={'Invitation Code'}
+            onChange={this.onChange}
+            onKeyPress={this.onKeyPress}
+            value={invitationCode}
+          />
+          <div className='invitation-code-error'>{error}</div>
+          <Button disabled={!invitationCode.length} className='invitation-code-button' onClick={this.onSubmit}>Submit</Button>
+        </div>
       </Modal>
-
     );
   }
 }

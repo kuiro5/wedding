@@ -3,6 +3,18 @@
   flex-direction: column;
 }
 
+.rsvp-event {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rsvp-divider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .rsvp-modal-footer {
   display: flex;
   justify-content: flex-end;

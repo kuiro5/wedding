@@ -41,7 +41,7 @@ const Accomodations = () => {
               </Box>
             </Flex>
           </div>
-          <Button onClick={() => window.open('https://www.marriott.com/event-reservations/reservation-link.mi?id=1547580083445&key=GRP&app=resvlink', '_blank')}>Book online</Button>
+          <Button onClick={() => window.open('https://www.marriott.com/event-reservations/reservation-link.mi?id=1547580083445&key=GRP&app=resvlink', '_blank')}>Book</Button>
         </Box>
         <Box width={[1, 1/2]} px={[2, 3, 3, 5]} className='accomodation-hotel'>
           <h4 className='accomodation-subtitle'>Hotel Monaco</h4>
@@ -66,7 +66,7 @@ const Accomodations = () => {
               </Box>
             </Flex>
           </div>
-          <Button onClick={() => window.open('https://www.ihg.com/kimptonhotels/hotels/us/en/find-hotels/hotel/rooms?qDest=620%20William%20Penn%20Place,%20Pittsburgh,%20PA,%20US&qCiMy=72019&qCiD=31&qCoMy=82019&qCoD=2&qAdlt=1&qChld=0&qRms=1&qRtP=6CBARC&qIta=99801505&qGrpCd=D72&qSlH=PITHM&qAkamaiCC=US&qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va&qAAR=6CBARC&qWch=0&qSmP=1&setPMCookies=true&qRad=30&qRdU=mi&srb_u=1&icdv=99801505', '_blank')}>Book online</Button>
+          <Button onClick={() => window.open('https://www.ihg.com/kimptonhotels/hotels/us/en/find-hotels/hotel/rooms?qDest=620%20William%20Penn%20Place,%20Pittsburgh,%20PA,%20US&qCiMy=72019&qCiD=31&qCoMy=82019&qCoD=2&qAdlt=1&qChld=0&qRms=1&qRtP=6CBARC&qIta=99801505&qGrpCd=D72&qSlH=PITHM&qAkamaiCC=US&qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va&qAAR=6CBARC&qWch=0&qSmP=1&setPMCookies=true&qRad=30&qRdU=mi&srb_u=1&icdv=99801505', '_blank')}>Book</Button>
         </Box>
       </Flex>
     </Flex>

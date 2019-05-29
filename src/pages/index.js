@@ -50,17 +50,19 @@ class IndexPage extends Component  {
         </Section>
         <SaveTheDate />
         <Section id={'stay'}>
-        <Accomodations />
+          <Accomodations />
         </Section>
         <RSVPFooter openRSVP={this.openInvitationCode}/>
-        <InvitationCode
-          invitationCode={invitationCode}
-          onInvitationCodeChange={this.onInvitationCodeChange}
-          isOpen={modalID === ModalIDs.INVITATION_CODE}
-          close={this.closeModal}
-          submit={this.openRSVP}
-        />
-        <RSVP isOpen={modalID === ModalIDs.RSVP} close={this.closeModal} />
+        {modalID === ModalIDs.INVITATION_CODE &&
+            <InvitationCode
+              invitationCode={invitationCode}
+              onInvitationCodeChange={this.onInvitationCodeChange}
+              isOpen={modalID === ModalIDs.INVITATION_CODE}
+              close={this.closeModal}
+              submit={this.openRSVP}
+            />
+        }
+        <RSVP invitationCode={invitationCode} isOpen={modalID === ModalIDs.RSVP} close={this.closeModal} />
       </Layout>
     )
   }
