@@ -10,7 +10,9 @@ class Modal extends Component {
 
     const customStyles = {
       content: {
-        padding: '2rem',
+        padding: '3rem',
+        borderRadius: '8px',
+        boxShadow: '0 10px 20px rgba(0,0,0,0.10)',
         top: '50%',
         left: '50%',
         right: 'auto',

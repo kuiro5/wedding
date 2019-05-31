@@ -32,18 +32,18 @@ class RSVP extends Component {
       >
         <form className='rsvp-form' action='https://formspree.io/joshkuiros@gmail.com' method='POST'>
           <div className='rsvp-label-input'>
-            <div>Email*</div>
+            <div>Email Address*</div>
             <input id='email' name='email' placeholder='Enter email address' required/>
           </div>
           <div className='rsvp-label-input'>
             <div>Name*</div>
-            <input id='name' name='name' placeholder='Your name' required/>
+            <input id='name' name='name' placeholder='Enter first and last name' required/>
           </div>
           {this.showGuests() &&
               <div>
                 <div className='rsvp-label-select'>
                   <div>Are you bringing anyone with you?*</div>
-                  <select name='guests' required>
+                  <select className='select' required>
                     <option value='yes'>Yes</option>
                     <option value='no'>No</option>
                   </select>
@@ -65,8 +65,8 @@ class RSVP extends Component {
                 </Box>
                 <Box>
                   <select name='boating' required>
-                    <option value='yes'>Yes</option>
-                    <option value='no'>No</option>
+                    <option value='yes'>Accepts</option>
+                    <option value='no'>Declines</option>
                   </select>
                 </Box>
               </Flex>
@@ -80,8 +80,8 @@ class RSVP extends Component {
                 </Box>
                 <Box>
                   <select name='rehearsal' required>
-                    <option value='yes'>Yes</option>
-                    <option value='no'>No</option>
+                    <option value='yes'>Accepts</option>
+                    <option value='no'>Declines</option>
                   </select>
                 </Box>
               </Flex>
@@ -94,8 +94,8 @@ class RSVP extends Component {
             </Box>
             <Box>
               <select name='wedding' required>
-                <option value='yes'>Yes</option>
-                <option value='no'>No</option>
+                <option value='yes'>Accepts</option>
+                <option value='no'>Declines</option>
               </select>
             </Box>
           </Flex>

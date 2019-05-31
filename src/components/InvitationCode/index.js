@@ -58,10 +58,10 @@ class InvitationCode extends Component {
         title={'Welcome!'}
       >
         <div className='invitation-code-wrapper'>
-          <div>To begin, please enter the code from the details card in your invitation:</div>
+          <div>To begin, please enter the code provided on the RSVP card in your invitation:</div>
           <input
             className='invitation-code-input'
-            placeholder={'Invitation Code'}
+            placeholder={'Enter invitation code'}
             onChange={this.onChange}
             onKeyPress={this.onKeyPress}
             value={invitationCode}
