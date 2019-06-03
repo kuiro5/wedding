@@ -43,14 +43,14 @@ class RSVP extends Component {
               <div>
                 <div className='rsvp-label-select'>
                   <div>Are you bringing anyone with you?*</div>
-                  <select className='select' required>
+                  <select name='guests' className='select' required>
                     <option value='yes'>Yes</option>
                     <option value='no'>No</option>
                   </select>
                 </div>
                 <div className='rsvp-label-input'>
                   <div>Guest Names</div>
-                  <input id='guests' name='guest_names' placeholder='First and last name of guests'/>
+                  <input id='guest_names' name='guest_names' placeholder='First and last name of guests'/>
                 </div>
               </div>
           }
