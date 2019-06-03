@@ -58,9 +58,3 @@
   opacity: .5;
   transition: 0.2s;
 }
-
-.select {
-  background: white;
-  border: 1px solid #A7ADAF;
-  margin-left: 2rem;
-}

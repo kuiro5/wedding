@@ -660,3 +660,7 @@ textarea {
   border-radius: 4px;
   border: 1px solid lightgray;
 }
+
+select {
+  background-color: white;
+}
