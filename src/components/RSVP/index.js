@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from '../Button';
 import Modal from '../Modal';
 import { Flex, Box } from '@rebass/grid';
-import InvitationCodes from '../../constants/InvitationCodes';
+import InvitationCodes from '../../constants/invitationCodes';
 import './styles.css';
 
 const {
