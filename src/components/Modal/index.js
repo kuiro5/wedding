@@ -20,7 +20,7 @@ class Modal extends Component {
       borderRadius: '8px',
       boxShadow: '0 10px 20px rgba(0,0,0,0.10)',
       minWidth: '50%',
-      maxHeight: '90vh',
+      maxHeight: '90%',
       overflowY: 'auto',
       backgroundColor: 'white',
       position: 'relative',
