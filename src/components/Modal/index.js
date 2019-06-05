@@ -24,6 +24,7 @@ class Modal extends Component {
       overflowY: 'auto',
       backgroundColor: 'white',
       position: 'relative',
+      WebkitOverflowScrolling: 'touch',
     };
 
     const underlayStyles = {
