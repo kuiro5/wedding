@@ -54,7 +54,7 @@ class RSVP extends Component {
           <div>Please select which events you will be attending:</div>
           {this.showBoating() &&
               <Flex className='rsvp-event'>
-                <Box>
+                <Box pr={3}>
                   <strong>Boating and Brews</strong>
                   <div>Friday, August 30th, 2019 at 6:30pm</div>
                   <div>Peggy's Harbor, Pittsburgh, PA</div>
@@ -69,7 +69,7 @@ class RSVP extends Component {
           }
           {this.showRehearsal() &&
               <Flex className='rsvp-event'>
-                <Box>
+                <Box pr={3}>
                   <strong>Rehearsal Dinner</strong>
                   <div>Saturday, August 31th, 2019 at 5:00pm</div>
                   <div>Vue 412, Pittsburgh, PA</div>
@@ -83,7 +83,7 @@ class RSVP extends Component {
               </Flex>
           }
           <Flex className='rsvp-event'>
-            <Box>
+            <Box pr={3}>
               <strong>Wedding Ceremony and Reception</strong>
               <div>Sunday, September 1st, 2019 at 5:00pm</div>
               <div>The Pennsylvanian, Pittsburgh, PA</div>
