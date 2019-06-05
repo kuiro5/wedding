@@ -38,25 +38,18 @@ class InvitationCode extends Component {
     }
 
     onInvitationCodeChange(e);
-  };
-
-  onKeyPress = (target) => {
+  }; onKeyPress = (target) => {
     if(target.charCode === 13) {
       this.onSubmit();
     }
   }
 
   render() {
-    const { close, isOpen, submit, invitationCode, onInvitationCodeChange } = this.props;
+    const { submit, invitationCode, onInvitationCodeChange } = this.props;
     const { showError } = this.state;
     const error = showError ? 'Invalid Invitation Code' : '';
 
     return(
-      <Modal
-        isOpen={isOpen}
-        close={close}
-        title={'Welcome!'}
-      >
         <div className='invitation-code-wrapper'>
           <div>To begin, please enter the code provided on the RSVP card in your invitation:</div>
           <input
@@ -69,7 +62,6 @@ class InvitationCode extends Component {
           <div className='invitation-code-error'>{error}</div>
           <Button disabled={!invitationCode.length} className='invitation-code-button' onClick={this.onSubmit}>Submit</Button>
         </div>
-      </Modal>
     );
   }
 }

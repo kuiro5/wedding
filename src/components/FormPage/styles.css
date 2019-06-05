@@ -1,0 +1,11 @@
+.form-page {
+  margin: 3rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-page-inner {
+  max-width: 30rem;
+}

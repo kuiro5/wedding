@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import Layout from '../components/layout';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import HeroMessage from '../components/HeroMessage';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
-import RSVP from '../components/RSVP';
 import InvitationCode from '../components/InvitationCode';
 import SEO from '../components/seo';
 import OurStory from '../components/OurStory';
@@ -19,19 +18,7 @@ import ModalIDs from '../constants/modalIDs';
 import './styles.css'
 
 class IndexPage extends Component  {
-  constructor() {
-    super();
-
-    this.initialState = {
-      modalID: null,
-      invitationCode: '',
-    };
-    this.state = this.initialState;
-  }
-
   render() {
-    const { modalID, showRSVP, invitationCode } = this.state;
-
     return(
       <Layout>
         <SEO title="Josh + Rach" keywords={[`josh kuiros`, `rachel morelli`, `wedding`]} />
@@ -53,35 +40,12 @@ class IndexPage extends Component  {
           <Accomodations />
         </Section>
         <RSVPFooter openRSVP={this.openInvitationCode}/>
-        {modalID === ModalIDs.INVITATION_CODE &&
-            <InvitationCode
-              invitationCode={invitationCode}
-              onInvitationCodeChange={this.onInvitationCodeChange}
-              isOpen={modalID === ModalIDs.INVITATION_CODE}
-              close={this.closeModal}
-              submit={this.openRSVP}
-            />
-        }
-        <RSVP invitationCode={invitationCode} isOpen={modalID === ModalIDs.RSVP} close={this.closeModal} />
       </Layout>
     )
   }
 
-
-  onInvitationCodeChange = ({ target: { value: invitationCode } }) => {
-    this.setState({ invitationCode })
-  }
-
   openInvitationCode = () => {
-    this.setState({ modalID: ModalIDs.INVITATION_CODE });
-  }
-
-  openRSVP = () => {
-    this.setState({ modalID: ModalIDs.RSVP });
-  }
-
-  closeModal = () => {
-    this.setState({ ...this.initialState });
+    navigate('/invitation-code')
   }
 }
 

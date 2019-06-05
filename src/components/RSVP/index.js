@@ -25,11 +25,7 @@ class RSVP extends Component {
     const { close, isOpen } = this.props;
 
     return(
-      <Modal
-        isOpen={isOpen}
-        close={close}
-        title={'RSVP'}
-      >
+      <div>
         <form className='rsvp-form' action='https://formspree.io/joshkuiros@gmail.com' method='POST'>
           <div className='rsvp-label-input'>
             <div>Email Address*</div>
@@ -107,7 +103,7 @@ class RSVP extends Component {
             <Button type='submit'>Submit</Button>
           </div>
         </form>
-      </Modal>
+      </div>
 
     );
   }
