@@ -51,7 +51,7 @@ class RSVP extends Component {
               </div>
           }
           <hr className='rsvp-divider' />
-          <div>Please select which events you will be attending:</div>
+          <div>Please confirm your attendance:</div>
           {this.showBoating() &&
               <Flex className='rsvp-event'>
                 <Box pr={3}>
