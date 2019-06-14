@@ -97,7 +97,7 @@ class RSVP extends Component {
           </Flex>
           <div className='rsvp-label-input'>
             <div>Any notes for us?</div>
-            <textarea placeholder='Dietary restrictions, messages, etc' rows='2' name='messages'/>
+            <textarea placeholder='Dietary preferences, messages, etc' rows='2' name='messages'/>
           </div>
           <div className='rsvp-modal-footer'>
             <Button type='submit'>Submit</Button>
